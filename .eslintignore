@@ -1,0 +1,13 @@
+/.git
+/.vscode
+/.idea
+node_modules
+
+**/dist
+**/es
+**/esm
+**/lib
+**/node_modules
+**/fonts
+**/*.less
+**/*.scss
