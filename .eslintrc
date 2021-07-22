@@ -1,12 +1,17 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
     "allowImportExportEverywhere": false,
     "codeFrame": false
   },
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
-    "airbnb",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "prettier",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -30,12 +35,16 @@
       }
     ],
     "react/jsx-props-no-spreading": "off",
-    "max-len": ["error", { "code": 100 }],
+    "max-len": ["error", { "code": 120 }],
     "prefer-promise-reject-errors": ["off"],
     "react/jsx-filename-extension": ["off"],
     "react/prop-types": ["off"],
     "no-return-assign": ["off"],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-    "react/forbid-prop-types": "off"
+    "react/forbid-prop-types": "off",
+    "no-eval": "off", // todo: delete
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }
