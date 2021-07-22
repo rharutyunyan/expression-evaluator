@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Row } from 'antd';
+import './ButtonSubmit.scss';
 
 import { IButtonSubmitProps } from './types/button-submit-props.type';
 

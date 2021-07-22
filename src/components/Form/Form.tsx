@@ -11,14 +11,17 @@ const MyForm: React.FC<IMyFormProps> = ({ addNumber }) => {
   return (
     <>
       <Row>
-        <Input
-          className="my-input"
-          min={1}
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-        />
+        <Col md={12} xs={24}>
+          <div className="form-input-item">
+            <Input className="my-input" value={value} onChange={(e) => setValue(e.target.value)} />
+          </div>
+        </Col>
+        <Col md={12} xs={24}>
+          <div className="form-input-item">
+            <ButtonSubmit title="Add number" submitFunc={addNumber} value={value} />
+          </div>
+        </Col>
       </Row>
-      <ButtonSubmit title="Add number" submitFunc={addNumber} value={value} />
     </>
   );
 };

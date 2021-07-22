@@ -6,22 +6,21 @@ export const addNum1 = (num: string) =>
   } as const);
 
 export const ADD_NUM_2 = 'eval/ADD_NUM_2';
-export const addNum2 = (num: string) =>
+export const addNum2 = (num: string): any =>
   ({
     type: ADD_NUM_2,
     num,
   } as const);
 
 export const ADD_OPERATOR = 'eval/ADD_OPERATOR';
-export const addOperator = (operator: string) =>
+export const addOperator = (operator: string): any =>
   ({
     type: ADD_OPERATOR,
     operator,
   } as const);
 
 export const RESULT = 'eval/RESULT';
-export const result = () => {
-  console.log('-----stex mtav nayev');
+export const result = (): any => {
   return {
     type: RESULT,
   } as const;

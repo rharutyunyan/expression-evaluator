@@ -2,15 +2,12 @@ import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { notification, Row, Col } from 'antd';
 
-import { MyGrid, MyCard, MyForm, HeaderTitle } from '../../../../components';
-import { EvalContext, DispatchContext } from '../../../../context/provider/EvalProvider';
+import { MyForm, HeaderTitle } from '../../../../components';
+import { DispatchContext } from '../../../../context/provider/EvalProvider';
 import { isNumber } from '../../../../utils/is-number.utils';
 import * as actions from '../../../../context/actions/EvalActions';
 
 const FirstOperand: React.FC = () => {
-  const {
-    evaluation: { num1 },
-  } = useContext(EvalContext);
   const dispatch = useContext(DispatchContext);
   const history = useHistory();
 
@@ -31,7 +28,7 @@ const FirstOperand: React.FC = () => {
       <Col span={24}>
         <HeaderTitle />
       </Col>
-      <Col span={8}>
+      <Col span={24}>
         <MyForm addNumber={addNumber} />
       </Col>
     </Row>

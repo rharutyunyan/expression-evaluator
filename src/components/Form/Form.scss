@@ -6,3 +6,25 @@
   border-radius: 5px;
   width: 100%;
 }
+
+.form-input-item {
+  display: block;
+  margin: 10px;
+  text-align: center;
+  input {
+    width: 200px;
+    float: right;
+    @media (max-width: 480px) {
+      float: none;
+    }
+  }
+  button {
+    width: 200px;
+    background: #79cea1;
+    color: white;
+    margin-left: 10px;
+    @media (max-width: 480px) {
+      margin: 0 auto;
+    }
+  }
+}

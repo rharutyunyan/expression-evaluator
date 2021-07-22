@@ -1,0 +1,32 @@
+.evaluation-result {
+  .header-title {
+    margin: 10px;
+    width: 100%;
+  }
+}
+
+.number-input-div {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+  text-align: center;
+  .number-input {
+    display: inline-block;
+    width: 31%;
+    margin: 5px 1.1%;
+  }
+  .equal {
+    margin: 5px 0;
+    font-size: 24px;
+  }
+  .result {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #79cea1;
+  }
+}
+
+.select-operator {
+  width: 100px;
+  margin: 10px;
+}
